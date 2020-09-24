@@ -1,0 +1,38 @@
+.mocap {
+  font-size: 16px;
+  height: 600px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+
+}
+
+.mocap .div2 {
+  font-size: 16px;
+  height: 600px;
+  background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url('../images/img_mocap/div2.png');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+
+}
+
+.mocap .div3 {
+  background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url('../images/img_mocap/div3.png');
+}
+
+.mocap .div4 {
+  background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url('../images/img_mocap/div4.png');
+}
+
+.mocap .div5 {
+  background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url('../images/img_mocap/div5.png');
+}
+
+.mocap .div6 {
+  background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url('../images/img_mocap/div6.png');
+}

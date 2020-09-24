@@ -105,9 +105,15 @@ header nav a:hover {
 
 }
 
-.box-filme {
-  height: 100%;
-  width: 100%;
+.mocap {
+  width: 60px;
+}
+
+.box-equipe {
+  height: 70%;
+  width: 70%;
+  padding: 10px;
+  border-radius: 50%;
   display: block;
 }
 
