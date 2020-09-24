@@ -17,18 +17,32 @@
   background-size: contain;
 }
 
-.mocap .div3 {
+.mocap #div3 {
   background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url('../images/img_mocap/div3.png');
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+}
 }
 
-.mocap .div4 {
+.mocap #div4 {
   background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url('../images/img_mocap/div4.png');
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+
 }
 
-.mocap .div5 {
+.mocap #div5 {
   background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url('../images/img_mocap/div5.png');
+  width: 100%;
+  height: 100%;
+  background-size: contain;
 }
 
-.mocap .div6 {
+.mocap #div6 {
   background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url('../images/img_mocap/div6.png');
+  width: 100%;
+  height: 100%;
+  background-size: contain;
 }
