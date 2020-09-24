@@ -1,6 +1,7 @@
 .mocap {
   font-size: 16px;
   height: 600px;
+  width: 700px;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -10,15 +11,7 @@
 }
 
 .mocap .div2 {
-  font-size: 16px;
-  height: 600px;
   background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url('../images/img_mocap/div2.png');
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
-
 }
 
 .mocap .div3 {
