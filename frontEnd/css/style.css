@@ -1,0 +1,116 @@
+:root {
+  --nomeEmpresa: white;
+  --fundoTela: #1e338f;
+}
+
+/* elementos base */
+
+body {
+  background: var(--fundoTela);
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+header {
+  height: 70px;
+}
+
+header .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+header .logo {
+  padding: 10px;
+  color: var(--vermelho);
+  font-family: "Arial Black";
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  font-size: 40px;
+}
+
+
+header nav a {
+  padding: 10px;
+  text-decoration: none;
+  color: #AAa;
+  margin-right: 10px;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+
+}
+
+header nav a:hover {
+  color: #ffff;
+}
+
+/* ////// filme principal */
+
+.fundoTela {
+  font-size: 16px;
+  height: 600px;
+  background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url('../images/fundoTela_MyHealthLIb.png');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+
+}
+
+.fundoTela .descricao {
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.fundoTela .titulo {
+  margin-top: 5%;
+  font-size: 40px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao {
+  background-color: rgba(0, 0, 0, 50);
+  border: none;
+  color: white;
+
+  padding: 15px;
+  margin-right: 15px;
+  font-size: 12px;
+
+  cursor: pointer;
+  transition: .5s ease all;
+}
+
+.botao:hover {
+  background: white;
+  color: black;
+}
+
+.botao i {
+  margin-right: 5px;
+}
+
+.container {
+  margin-left: 20px;
+}
+
+.fundoTela .container {
+  width: 70%;
+
+}
+
+.box-filme {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.carrossel-filmes {
+  margin-top: 5px;
+}
