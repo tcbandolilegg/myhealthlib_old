@@ -7,7 +7,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: start;
+  color: black;
 
+}
+
+.mocap #div1 {
+  background: url('../images/img_mocap/div1.png') no-repeat;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
 }
 
 .mocap #div2 {
@@ -23,7 +31,7 @@
   height: 100%;
   background-size: contain;
 }
-}
+
 
 .mocap #div4 {
   background: url('../images/img_mocap/div4.png') no-repeat;
