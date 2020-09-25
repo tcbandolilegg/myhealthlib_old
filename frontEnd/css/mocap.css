@@ -27,7 +27,7 @@ h4 {
 .container-fluid #cultura {
   /* 
   modificada na verção 0.1 background: url('../images/img_mocap/div1.png')60% no-repeat; */
-  background: url('../images/img_mocap/cultura.png')60% no-repeat;
+  background: url('../images/img_mocap/cultura.png')30% no-repeat;
   height: 600px;
   background-size: contain;
   background-size: cover;
@@ -80,7 +80,7 @@ background com imagem das divs de 1 a 6*/
 
 
 .container-fluid #roadMap {
-  background: url('../images/img_mocap/roadmap.png')60% no-repeat;
+  background: url('../images/img_mocap/roadmap.png')30% no-repeat;
   height: 600px;
   background-size: contain;
   background-size: cover;
