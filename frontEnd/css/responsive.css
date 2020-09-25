@@ -16,3 +16,10 @@
     width: 60%;
   }
 }
+
+@media screen and (max-width:800px) {
+  .continer {
+    width: 60%;
+  }
+
+}

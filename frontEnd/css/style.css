@@ -60,12 +60,23 @@ header nav a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: start;
-
 }
+
+.fundoCorpo {
+  font-size: 16px;
+  /* height: 600px; */
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
 
 .fundoTela .descricao {
   margin-top: 10px;
   margin-bottom: 50px;
+  font-size: 22px;
 }
 
 .fundoTela .titulo {
@@ -117,6 +128,16 @@ header nav a:hover {
   display: block;
 }
 
-.carrossel-filmes {
+.carrossel-equipes {
   margin-top: 5px;
+}
+
+.footer {
+  height: 50px;
+  padding: 10px;
+  text-align: center;
+
+  background-color: rgb(4, 25, 63);
+  color: aliceblue;
+  font-style: italic;
 }

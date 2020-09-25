@@ -1,4 +1,5 @@
-.mocap {
+/* .mocap {
+  margin-top: 5px;
   font-size: 30px;
   font-weight: bold;
   height: 600px;
@@ -9,45 +10,133 @@
   justify-content: center;
   align-items: start;
   color: black;
+} */
 
-
+.container-fluid h2 {
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 10px;
 }
 
-.mocap #div1 {
-  background: url('../images/img_mocap/div1.png') no-repeat;
-  width: 100%;
-  height: 100%;
-  background-size: contain;
-}
-
-.mocap #div2 {
-  background: url('../images/img_mocap/div2.png') no-repeat;
-  width: 100%;
-  height: 100%;
-  background-size: contain;
-}
-
-.mocap #div3 {
-  background: url('../images/img_mocap/div3.png') no-repeat;
-  width: 100%;
-  height: 100%;
-  background-size: contain;
+.container-fluid h3,
+h4 {
+  text-align: center;
 }
 
 
-.mocap #div4 {
-  background: url('../images/img_mocap/div4.png') no-repeat;
-  width: 100%;
-  height: 100%;
+.container-fluid #cultura {
+  /* 
+  modificada na verção 0.1 background: url('../images/img_mocap/div1.png')60% no-repeat; */
+  background: url('../images/img_mocap/cultura.png')60% no-repeat;
+  height: 600px;
   background-size: contain;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+/* subistituida pelo HTML os
+background com imagem das divs de 1 a 6*/
+.container-fluid #quemSomos {
+  padding: 20px;
+  /* background: url('../images/img_mocap/div2.png') no-repeat; */
+  height: 600px;
+  /* background-size: contain; */
+  /* background-size: cover; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: start; */
+  color: rgb(8, 32, 109);
+  background-color: rgb(195, 212, 248);
+}
+
+.container-fluid #posicionamento {
+  padding: 20px;
+  /* background: url('../images/img_mocap/div2.png') no-repeat; */
+  height: 600px;
+  /* background-size: contain; */
+  /* background-size: cover; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: start; */
+  color: rgb(8, 32, 109);
+  background-color: rgb(195, 212, 248);
+}
+
+.container-fluid #parcerias {
+  padding: 20px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: rgb(195, 212, 248);
+  background-color: rgb(8, 32, 109);
+}
+
+
+
+.container-fluid #roadMap {
+  background: url('../images/img_mocap/roadmap.png')60% no-repeat;
+  height: 600px;
+  background-size: contain;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  color: rgb(195, 212, 248);
+  background-color: rgb(8, 32, 109);
+}
+
+
+.container-fluid #parcerias {
+  /* Parcerias */
+
+  /* 
+  retirada na versão 0.1
+  background: url('../images/img_mocap/div4.png')60% no-repeat; */
+  height: 600px;
+  background-size: contain;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  color: rgb(8, 32, 109);
+  background-color: rgb(195, 212, 248);
 
 }
 
-.mocap #div5 {
-  background: url('../images/img_mocap/div5.png') no-repeat;
-  width: 100%;
-  height: 100%;
+.container-fluid #div6 {
+  background: url('../images/img_mocap/div5.png')60% no-repeat;
+  height: 600px;
   background-size: contain;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  color: rgb(195, 212, 248);
+  background-color: rgb(8, 32, 109);
+}
+
+
+.container-fluid #redesSociais {
+  margin-top: 50px;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(218, 232, 250);
+  align-items: center;
+  justify-content: center;
+}
+
+.icones {
+  margin-left: 40px;
 }
 
 /* 
@@ -56,4 +145,6 @@
   width: 100%;
   height: 100%;
   background-size: contain;
+   color: rgb(8, 32, 109);
+  background-color: rgb(195, 212, 248);
 } */
