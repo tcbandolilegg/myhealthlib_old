@@ -175,3 +175,9 @@ header nav a:hover {
   text-align: center;
   border-right: none;
 }
+
+#cultura p {
+  text-align: center;
+  align-items: center;
+  align-self: center;
+}
