@@ -17,18 +17,58 @@
 </head>
 
 <body>
+  <section>
+    <!-- Menu deslizante ******************************* -->
+    <ul id=menu>
+      <li><a href="#cabecalho"><i class="fas fa-home"></i></a></li>
+      <li><a href="#quemSomos"><i class="fas fa-address-card"></i></a></li>
+      <li><a href="#cultura"><i class="fas fa-business-time"></i></i></a></li>
+      <li><a href="#posicionamento"><i class="fas fa-crosshairs"></i></a></li>
+      <li><a href="#roadMap"><i class="fas fa-hiking"></i></a></li>
+      <li><a href="#parcerias"><i class="fas fa-handshake"></i></a></li>
+      <li><a href="#parcerias"><i class="fab fa-blogger"></i></a></li>
+      <li><a href="#equipe"><i class="fas fa-users"></i></a></li>
+    </ul>
+  </section>
+
+  <!-- menu topo da pagina -->
   <header class="header">
-    <div class="container">
-      <!-- <img class="logo" src="../frontEnd/images/logo_pequena.png" alt="logo Myhealthlib"> -->
-      <h2 class="logo">MyHealthLink</h2>
-      <nav>
-        <a href="#quemSomos">Quem somos</a>
-        <a href="#cultura">Cultura</a>
-        <a href="#posicionamento">Posicionamento</a>
-        <a href="#roadMap">Rodmap</a>
-        <a href="#parcerias">Parcerias</a>
-        <a href="#equipe">Equipe</a>
-      </nav>
+    <div class="container-fluid">
+      <nav class="navbar">
+        <div id="cabecalho">
+          <h2 class="logo">MyHealthLink</h2>
+        </div>
+        <div>
+          <a href="#quemSomos">Quem somos</a>
+        </div>
+        <div>
+          <a href="#cultura">Cultura</a>
+        </div>
+        <div>
+          <a href="#posicionamento">Posicionamento</a>
+        </div>
+        <div>
+          <a href="#roadMap">Rodmap</a>
+        </div>
+        <div>
+          <a href="#parcerias">Parcerias</a>
+        </div>
+        <div>
+          <a href="./frontEnd/html/blog.html">Blog</a>
+        </div>
+        <div>
+          <a href="#equipe">Equipe</a>
+        </div>
+
+        <div>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+    </div>
+    </div>
+    </nav>
     </div>
   </header>
   <main>
@@ -43,18 +83,16 @@
         </p>
         <div class="botoes">
           <button role="button" class="botao" onclick="rodaVideo()">
-            <i class="fas fa-play"></i> FALA DA FUNDADORA
+            <a href="./frontEnd/html/falaDaFundadora.html">
+              <i class="fas fa-play"></i> FALA DA FUNDADORA
+            </a>
           </button>
 
           <button role="button" class="botao">
             <i class="fas fa-info-circle"></i>
             MAIS INFORMAÇÕES
           </button>
-
         </div>
-
-
-        <!-- ,\"InstagramUrl\":\"\",\"LinkedInUrl\":\"\",\"YoutubeUrl\":\",\"CustomUrl\":\"\",\"TwitterUrl\":\,\"PinterestUrl\":\""}", -->
       </div>
       <div class="container-fluid">
         <div id="redesSociais">
@@ -102,7 +140,6 @@
 
   <main>
     <div class="fundoCorpo">
-
       <div class="container-fluid">
         <div id="quemSomos">
           <h2>
@@ -110,7 +147,8 @@
           </h2>
           <h3>
             Somos uma empresa quer originou da dor, de uma mãe que por ter perdido uma filha
-            de catpora, a cada dia sepreocupava mais e mais emmanter os registros médicos e histórios familiares, quando
+            de catpora, a cada dia se preocupava mais e mais em manter os registros médicos e histórios familiares,
+            quando
             sua segunda filha nasceu, por caus de varios fatores quem
             geram mais cuidados, ela iniciou um portifólio em papel, com fichários catgorizados. Porém a quantidade de
             papel começou a ser izagerada, e de dificil pesquisa,
@@ -124,6 +162,11 @@
 
             Venha faça parte desta história de solução ....
           </h3>
+          <a href="./frontEnd/html/quemSomos.html">
+            <p> </p>
+            <p> </p>
+            <h2>Conheça toda a história</h2>
+          </a>
 
 
         </div>
@@ -133,13 +176,29 @@
   </main>
 
   <main>
-    <div class="container-fluid">
-      <div id="cultura">
-        <p>MOCKUP 2
-          Cultura</p>
+    <div class="fundoCorpo">
+      <div class="container-fluid ">
+        <div id="cultura">
+          <ul>
+            <li>
+              <img class="itens_cultura" src="./frontEnd/images/preocpacao.png" alt="">
+            </li>
+            <li>
+              <img class="itens_cultura" src="./frontEnd/images/excelencia.png" alt="">
+            </li>
+            <li>
+              <img class="itens_cultura" src="./frontEnd/images/sustentabilidade.png" alt="">
+            </li>
+            <li>
+              <img class="itens_cultura" src="./frontEnd/images/parceiros.png" alt="">
+            </li>
+            <li>
+              <img class="itens_cultura" src="./frontEnd/images/colaborativos.png" alt="">
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-
+    </div>>
   </main>
 
   <main>
@@ -172,20 +231,33 @@
         </div>
       </div>
     </div>
-
   </main>
+  <section>
 
-
-  <div class="container-fluid">
-    <div id="roadMap">
-      <p>RoadMap
-        MOCKUP 4
-      </p>
+    <div class="container-fluid">
+      <div id="roadMap">
+        roadmap
+      </div>
+      <!-- <div class="icones">
+        <div class="roadMap">
+          Agos 2018
+        </div>
+        <div class="roadMap">
+          Jul 2019
+        </div>
+        <div class="roadMap">
+          sart 2020
+        </div>
+        <div class="roadMap">
+          V_1 2021
+        </div>
+      </div> -->
     </div>
-  </div>
-
-
-
+  </section>
+  <div>
+    <p>RoadMap
+      MOCKUP 4
+    </p>
   </div>
   <div class="container-fluid">
     <div id="parcerias">

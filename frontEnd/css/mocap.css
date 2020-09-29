@@ -27,12 +27,12 @@ h4 {
 .container-fluid #cultura {
   /* 
   modificada na verção 0.1 background: url('../images/img_mocap/div1.png')60% no-repeat; */
-  background: url('../images/img_mocap/cultura.png')30% no-repeat;
+  background: url('../images/fundocultura.png') no-repeat;
   height: 600px;
   background-size: contain;
   background-size: cover;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: start;
 }
@@ -41,11 +41,12 @@ h4 {
 background com imagem das divs de 1 a 6*/
 .container-fluid #quemSomos {
   padding: 20px;
-  /* background: url('../images/img_mocap/div2.png') no-repeat; */
+  background: url('../images/quemSomos.png') no-repeat;
   height: 600px;
   /* background-size: contain; */
   /* background-size: cover; */
   display: flex;
+  padding-right: 550px;
   flex-direction: column;
   justify-content: center;
   /* align-items: start; */

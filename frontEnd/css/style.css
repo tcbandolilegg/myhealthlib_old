@@ -22,27 +22,24 @@ header .container {
   justify-content: space-between;
 }
 
-
 header .logo {
   padding: 10px;
   color: var(--vermelho);
-  font-family: "Arial Black";
+  font-family: 'Arial Black';
   align-items: center;
   justify-content: center;
   align-self: center;
   font-size: 40px;
 }
 
-
 header nav a {
   padding: 10px;
   text-decoration: none;
-  color: #AAa;
+  color: #aaa;
   margin-right: 10px;
   align-items: center;
   justify-content: center;
   align-self: center;
-
 }
 
 header nav a:hover {
@@ -54,7 +51,8 @@ header nav a:hover {
 .fundoTela {
   font-size: 16px;
   height: 600px;
-  background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url('../images/fundoTela_MyHealthLIb.png');
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
+    url('../images/fundoTela_MyHealthLIb.png');
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -72,7 +70,6 @@ header nav a:hover {
   align-items: start;
 }
 
-
 .fundoTela .descricao {
   margin-top: 10px;
   margin-bottom: 50px;
@@ -82,7 +79,8 @@ header nav a:hover {
 .fundoTela .titulo {
   margin-top: 5%;
   font-size: 40px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
 }
 
 .botao {
@@ -95,7 +93,7 @@ header nav a:hover {
   font-size: 12px;
 
   cursor: pointer;
-  transition: .5s ease all;
+  transition: 0.5s ease all;
 }
 
 .botao:hover {
@@ -113,7 +111,6 @@ header nav a:hover {
 
 .fundoTela .container {
   width: 70%;
-
 }
 
 .mocap {
@@ -136,8 +133,45 @@ header nav a:hover {
   height: 50px;
   padding: 10px;
   text-align: center;
-
   background-color: rgb(4, 25, 63);
   color: aliceblue;
   font-style: italic;
+}
+
+#menu {
+  position: fixed;
+  right: 0;
+  top: 30%;
+  width: 4em;
+  margin-top: -1.5em;
+  margin: -1.5em 0 0 0;
+  z-index: 5;
+  background: hsla(49, 80%, 60%, 0.7);
+  /* color: white; */
+  font-weight: bold;
+  font-size: x-large;
+  text-align: right;
+  border: solid hsla(214, 89%, 18%, 0.5);
+  border-right: none;
+  padding: 0.5em 1.5em 0.5em 1.5em;
+  box-shadow: 0 1px 3px black;
+  border-radius: 3em 0.5em 0.5em 3em;
+}
+
+.roadMap {
+  display: flex;
+  flex-direction: column;
+}
+
+.itens_cultura {
+  margin-top: 30px;
+  margin-left: 600px;
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+  width: 80px;
+  padding: 2px;
+  display: block;
+  text-align: center;
+  border-right: none;
 }
