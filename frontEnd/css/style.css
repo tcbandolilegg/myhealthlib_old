@@ -1,18 +1,22 @@
 :root {
   --nomeEmpresa: white;
   --fundoTela: #03145f;
+  --altura-div: 700px;
+  --largura-div: 1100px;
+
 }
 
 /* elementos base */
 
 body {
   background: var(--fundoTela);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
   color: white;
 }
 
 header {
-  height: 70px;
+  height: 80px;
 }
 
 header .container {
@@ -25,7 +29,8 @@ header .container {
 header .logo {
   padding: 10px;
   color: var(--nomeEmpresa);
-  font-family: 'Arial Black';
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
   align-items: center;
   justify-content: center;
   align-self: center;
@@ -291,10 +296,10 @@ background com imagem das divs de 1 a 6*/
   padding: 20px;
   background: url('../images/quemSomos.png') no-repeat;
   height: 600px;
-  /* background-size: contain; */
-  /* background-size: cover; */
+  /* background-size: contain;
+  background-size: cover; */
   display: flex;
-  padding-right: 550px;
+  padding-right: 300px;
   flex-direction: column;
   justify-content: center;
   /* align-items: start; */
@@ -304,16 +309,22 @@ background com imagem das divs de 1 a 6*/
 
 .container-fluid #posicionamento {
   padding: 20px;
-  /* background: url('../images/img_mocap/div2.png') no-repeat; */
+  background: url('../images/fundoposicionamento.png') no-repeat;
   height: 600px;
-  /* background-size: contain; */
-  /* background-size: cover; */
+  background-size: contain;
+  background-size: cover;
   display: flex;
+  padding-right: 350px;
   flex-direction: column;
   justify-content: center;
   /* align-items: start; */
   color: rgb(8, 32, 109);
   background-color: rgb(195, 212, 248);
+}
+
+
+.container-fluid #posicionamento h2,
+
 }
 
 .container-fluid #parcerias {
@@ -345,30 +356,32 @@ background com imagem das divs de 1 a 6*/
 .container-fluid #parcerias {
   /* Parcerias */
 
-  /* 
-  retirada na versão 0.1
+  /* retirada na versão 0.1
   background: url('../images/img_mocap/div4.png')60% no-repeat; */
   height: 600px;
   background-size: contain;
   background-size: cover;
   display: flex;
+  text-align: center;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
+  align-items: start center;
   color: rgb(8, 32, 109);
   background-color: rgb(195, 212, 248);
 
 }
 
-.container-fluid #div6 {
-  background: url('../images/img_mocap/div5.png')60% no-repeat;
+
+
+.container-fluid #roadMap {
+  background: url('../images/fundoradmap.png')60% no-repeat;
   height: 600px;
   background-size: contain;
   background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
+  align-items: center;
   color: rgb(195, 212, 248);
   background-color: rgb(8, 32, 109);
 }
@@ -386,4 +399,11 @@ background com imagem das divs de 1 a 6*/
 
 .icones {
   margin-left: 40px;
+  filter: brightness(50%);
+}
+
+.icones:hover {
+  padding: 0;
+  transition: 0.5s;
+  filter: brightness(100%);
 }
