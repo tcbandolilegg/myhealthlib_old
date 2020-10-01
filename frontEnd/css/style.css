@@ -314,7 +314,7 @@ background com imagem das divs de 1 a 6*/
   background-size: contain;
   background-size: cover;
   display: flex;
-  padding-right: 350px;
+  padding-right: 500px;
   flex-direction: column;
   justify-content: center;
   /* align-items: start; */
