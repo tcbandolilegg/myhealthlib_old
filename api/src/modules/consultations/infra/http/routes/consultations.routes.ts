@@ -2,10 +2,10 @@ import { Router } from 'express';
 import { parseISO } from 'date-fns';
 import { getCustomRepository } from 'typeorm';
 
-import ConsultationsRepository from '../repositories/ConsultationsRepository';
-import CreateConsultationService from '../services/CreateConsultationService';
+import ConsultationsRepository from '@modules/consultations/repositories/ConsultationsRepository';
+import CreateConsultationService from '@modules/consultations/services/CreateConsultationService';
 
-import ensureAuthenticated from '../middlewares/ensureAuthenticated';
+import ensureAuthenticated from '@modules/users/infra/http/middlewares/ensureAuthenticated';
 
 const consultationsRouter = Router();
 

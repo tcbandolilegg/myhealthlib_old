@@ -1,8 +1,8 @@
 import { getCustomRepository } from 'typeorm';
 
-import AppError from '../errors/AppError';
+import AppError from '@shared/errors/AppError';
 
-import Consultation from '../models/Consultation';
+import Consultation from '../infra/typeorm/entities/Consultation';
 import ConsultationsRepository from '../repositories/ConsultationsRepository';
 
 interface Request {
