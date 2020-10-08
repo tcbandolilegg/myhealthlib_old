@@ -3,7 +3,7 @@ import { getCustomRepository } from 'typeorm';
 import AppError from '@shared/errors/AppError';
 
 import Consultation from '../infra/typeorm/entities/Consultation';
-import ConsultationsRepository from '../repositories/ConsultationsRepository';
+import ConsultationsRepository from '../infra/typeorm/repositories/ConsultationsRepository';
 
 interface Request {
   user_id: string;
@@ -26,15 +26,13 @@ class CreateConsultationService {
     );
 
     try {
-      const consultation = consultationsRepository.create({
+      const consultation = await consultationsRepository.create({
         user_id,
         doctor,
         specialty,
         description,
         date,
       });
-
-      await consultationsRepository.save(consultation);
 
       return consultation;
     } catch (error) {

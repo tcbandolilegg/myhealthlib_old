@@ -2,7 +2,7 @@ import { Router } from 'express';
 import { parseISO } from 'date-fns';
 import { getCustomRepository } from 'typeorm';
 
-import ConsultationsRepository from '@modules/consultations/repositories/ConsultationsRepository';
+import ConsultationsRepository from '@modules/consultations/infra/typeorm/repositories/ConsultationsRepository';
 import CreateConsultationService from '@modules/consultations/services/CreateConsultationService';
 
 import ensureAuthenticated from '@modules/users/infra/http/middlewares/ensureAuthenticated';
