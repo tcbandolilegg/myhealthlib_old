@@ -3,7 +3,6 @@
   --fundoTela: #03145f;
   --altura-div: 700px;
   --largura-div: 1100px;
-
 }
 
 /* elementos base */
@@ -209,7 +208,6 @@ header nav a:hover {
   padding-top: 20px;
   align-items: center;
   text-align: center;
-
 }
 
 .cardAcesso {
@@ -227,16 +225,15 @@ header nav a:hover {
   color: white;
 }
 
-.emailSenhaAcesso>label {
+.emailSenhaAcesso > label {
   width: 100%;
   padding: 10px;
   display: block;
   color: azure;
   border-radius: 10px;
-
 }
 
-.emailSenhaAcesso>input {
+.emailSenhaAcesso > input {
   width: 90%;
   display: block;
   color: grey;
@@ -245,7 +242,7 @@ header nav a:hover {
   margin: 5px;
 }
 
-.emailSenhaAcesso>button {
+.emailSenhaAcesso > button {
   width: 95%;
   font-style: bold;
   background-color: rgb(185, 8, 8);
@@ -263,8 +260,6 @@ header nav a:hover {
   color: aliceblue;
 }
 
-
-
 .container-fluid h2 {
   text-align: center;
   font-weight: bold;
@@ -275,7 +270,6 @@ header nav a:hover {
 h4 {
   text-align: center;
 }
-
 
 .container-fluid #cultura {
   /* 
@@ -322,9 +316,8 @@ background com imagem das divs de 1 a 6*/
   background-color: rgb(195, 212, 248);
 }
 
-
-.container-fluid #posicionamento h2,
-
+.container-fluid #posicionamento p {
+  text-align: center;
 }
 
 .container-fluid #parcerias {
@@ -337,10 +330,8 @@ background com imagem das divs de 1 a 6*/
   background-color: rgb(8, 32, 109);
 }
 
-
-
 .container-fluid #roadMap {
-  background: url('../images/img_mocap/roadmap.png')30% no-repeat;
+  background: url('../images/img_mocap/roadmap.png') 30% no-repeat;
   height: 600px;
   background-size: contain;
   background-size: cover;
@@ -351,7 +342,6 @@ background com imagem das divs de 1 a 6*/
   color: rgb(195, 212, 248);
   background-color: rgb(8, 32, 109);
 }
-
 
 .container-fluid #parcerias {
   /* Parcerias */
@@ -368,13 +358,10 @@ background com imagem das divs de 1 a 6*/
   align-items: start center;
   color: rgb(8, 32, 109);
   background-color: rgb(195, 212, 248);
-
 }
 
-
-
 .container-fluid #roadMap {
-  background: url('../images/fundoradmap.png')60% no-repeat;
+  background: url('../images/fundoradmap.png') 60% no-repeat;
   height: 600px;
   background-size: contain;
   background-size: cover;
@@ -385,7 +372,6 @@ background com imagem das divs de 1 a 6*/
   color: rgb(195, 212, 248);
   background-color: rgb(8, 32, 109);
 }
-
 
 .container-fluid #redesSociais {
   margin-top: 50px;
