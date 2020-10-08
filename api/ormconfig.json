@@ -4,5 +4,14 @@
   "port": 5432,
   "username": "postgres",
   "password": "myhealthlib",
-  "database": "myhealthlib"
+  "database": "myhealthlib",
+  "entities": [
+    "./src/models/*.ts"
+  ],
+  "migrations": [
+    "./src/database/migrations/*.ts"
+  ],
+  "cli": {
+    "migrationsDir": "./src/database/migrations"
+  }
 }

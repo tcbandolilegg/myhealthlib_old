@@ -1,26 +1,38 @@
 import { Router } from 'express';
 import { parseISO } from 'date-fns';
+import { getCustomRepository } from 'typeorm';
+
 import ConsultationsRepository from '../repositories/ConsultationsRepository';
+import CreateConsultationService from '../services/CreateConsultationService';
+
+import ensureAuthenticated from '../middlewares/ensureAuthenticated';
 
 const consultationsRouter = Router();
-const consultationsRepository = new ConsultationsRepository();
 
-consultationsRouter.post('/', (request, response) => {
-  const { doctor, specialty, date } = request.body;
+consultationsRouter.use(ensureAuthenticated);
+
+consultationsRouter.post('/', async (request, response) => {
+  const { user_id, doctor, specialty, description, date } = request.body;
 
   const parsedDate = parseISO(date);
 
-  const consultation = consultationsRepository.create({
+  const createConsultation = new CreateConsultationService();
+
+  const consultation = await createConsultation.execute({
+    user_id,
     doctor,
     specialty,
+    description,
     date: parsedDate,
   });
 
   return response.json(consultation);
 });
 
-consultationsRouter.get('/', (request, response) => {
-  const consultations = consultationsRepository.all();
+consultationsRouter.get('/', async (request, response) => {
+  const consultationsRepository = getCustomRepository(ConsultationsRepository);
+
+  const consultations = await consultationsRepository.find();
 
   return response.json(consultations);
 });

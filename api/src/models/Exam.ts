@@ -10,8 +10,8 @@ import {
 
 import User from './User';
 
-@Entity('consultations')
-class Consultation {
+@Entity('exams')
+class Exam {
   @PrimaryGeneratedColumn('uuid')
   id: string;
 
@@ -23,16 +23,10 @@ class Consultation {
   user: User;
 
   @Column()
-  doctor: string;
-
-  @Column()
-  specialty: string;
+  exam: string;
 
   @Column()
   description: string;
-
-  @Column('timestamp with time zone')
-  date: Date;
 
   @CreateDateColumn()
   created_at: Date;
@@ -41,4 +35,4 @@ class Consultation {
   updated_at: Date;
 }
 
-export default Consultation;
+export default Exam;
