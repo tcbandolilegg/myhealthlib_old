@@ -6,14 +6,15 @@ export const Container = styled.div`
   margin: 0 auto;
   padding: 40px 0;
   display: flex;
-  align-items: center;
+  align-items: left;
   flex-direction: column;
   flex: 1;
 `;
 
 export const Title = styled.h1`
   font-size: 48px;
-  color: #f27a54;
+  color: blue;
+  text-align: center;
 `;
 
 export const TableContainer = styled.section`
@@ -22,10 +23,11 @@ export const TableContainer = styled.section`
   table {
     width: 100%;
     th {
-      color: #f27a54;
+      text-align: left;
+      color: white;
       font-weight: normal;
-      padding: 20px 32px;
-      font-size: 24px;
+      padding: 5px 32px;
+      font-size: 20px;
       line-height: 24px;
     }
 

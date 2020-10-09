@@ -4,12 +4,12 @@ import { FormHandles } from '@unform/core';
 import { Form } from '@unform/web';
 import * as Yup from 'yup';
 import InputMask from 'react-input-mask';
-import api from '../../services/api';
+// import api from '../../services/api';
 import getValidationErrors from '../../utils/getValidationErrors';
 
 import Input from '../../components/Input';
 import Button from '../../components/Button';
-import Header from '../../components/Header';
+// import Header from '../../components/Header';
 
 import { Container, Title } from './styles';
 // import { AxiosInterceptorManager } from 'axios';
@@ -77,7 +77,7 @@ const NewUser: React.FC = () => {
   );
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <Container>
         <Title>Novo usuário</Title>
         <Form ref={formRef} onSubmit={handleSubmit}>
@@ -88,11 +88,7 @@ const NewUser: React.FC = () => {
 
           <InputMask mask="99/99/9999">
             {() => (
-              <Input
-                name="dataNascimento"
-                required
-                placeholder="Data de nascimento"
-              />
+              <Input name="dataNascimento" placeholder="Data de nascimento" />
             )}
           </InputMask>
           <Input name="codEstado" placeholder="Estado" />

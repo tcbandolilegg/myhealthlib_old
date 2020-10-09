@@ -10,15 +10,15 @@ interface Usuarios {
   id: number;
   cpf: number;
   nome: string;
-  // ??? existe este tipo?
-  dataNascimento: Date;
-  enderecoRua: string;
+  dataNascimento: string;
+  tipoLogradouro: string;
+  enderecoLogradouro: string;
   enderecoNumero: number;
+  enderecoComplemento: string;
   enderecoBairro: string;
-  // cidade buscar na tabela de Estado
   codEstado: number;
-  // cidade buscar na tabela de Estado cidade
   codCidade: number;
+
   userDependente1: number;
   userDependente2: number;
   userDependente3: number;
@@ -49,38 +49,74 @@ const Dashboard: React.FC = () => {
 
   return (
     <>
-      <Header />
       <Container>
         <Title>Dados Cadastrados</Title>
 
         <TableContainer>
-          <table>
+          <table width="100%">
+            {/* <table width="100%"> */}
             <thead>
               <tr>
                 <th>ID</th>
-                <th>CPF:</th>
-                <th>Nome:</th>
-                <th>Data nascimento</th>
-                <th>Endereço</th>
-                <th>Bairro</th>
-                <th>Cidade</th>
-                <th>Estado</th>
-
-                <th>Dependente 1</th>
-                <th>Dependente 2</th>
-                <th>Dependente 3</th>
-                <th>Dependente 4</th>
-                <th>Dependente 5</th>
               </tr>
             </thead>
+            <tbody>
+              <tr>
+                <th>CPF:</th>
+              </tr>
+              <tr>
+                <th>Nome:</th>
+              </tr>
+              <tr>
+                <th>Data nascimento:</th>
+              </tr>
+              <tr>
+                <th>Endereço:</th>
+              </tr>
+              <tr>
+                <th>Bairro:</th>
+              </tr>
+              <tr>
+                <th>Estado:</th>
+              </tr>
+              <tr>
+                <th>Dependente 1:</th>
+              </tr>
+              <tr>
+                <th>Dependente 2:</th>
+              </tr>
+              <tr>
+                <th>Dependente 3:</th>
+              </tr>
+              <tr>
+                <th>Dependente 4:</th>
+              </tr>
+              <tr>
+                <th>Dependente 5:</th>
+              </tr>
+            </tbody>
+            {/* </table>
+
+          <table> */}
             <tbody>
               {/* // me peerdi aqi qual é com letra maiuscula */}
               {usuarios.map(usuarios => (
                 <tr key={usuarios.id}>
                   <td>{usuarios.id}</td>
+                  <td>{usuarios.cpf}</td>
                   <td>{usuarios.nome}</td>
                   <td>{usuarios.dataNascimento}</td>
-                  <td>{usuarios.enderecoRua}</td>
+                  <td>
+                    {usuarios.tipoLogradouro},{usuarios.enderecoLogradouro},
+                    {usuarios.enderecoNumero},{usuarios.enderecoBairro}
+                  </td>
+                  <td>{usuarios.codEstado}</td>
+                  <td>{usuarios.codCidade}</td>
+                  <td>{usuarios.userDependente1}</td>
+                  <td>{usuarios.userDependente2}</td>
+                  <td>{usuarios.userDependente3}</td>
+                  <td>{usuarios.userDependente4}</td>
+                  <td>{usuarios.userDependente5}</td>
                 </tr>
               ))}
             </tbody>
