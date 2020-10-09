@@ -1,39 +1,44 @@
-import { getRepository } from 'typeorm';
+import { injectable, inject } from 'tsyringe';
 
 import AppError from '@shared/errors/AppError';
 
+import IUsersRepository from '@modules/users/repositories/IUsersRepository';
 import Exam from '../infra/typeorm/entities/Exam';
-import User from '../infra/typeorm/entities/User';
+import IExamsRepository from '../repositories/IExamsRepository';
 
-interface Request {
+interface IRequest {
   user_id: string;
   examFilename: string;
   description: string;
 }
 
+@injectable()
 class CreateUserExamService {
+  constructor(
+    @inject('UsersRepository')
+    private usersRepository: IUsersRepository,
+
+    @inject('ExamsRepository')
+    private examsRepository: IExamsRepository,
+  ) {}
+
   public async execute({
     user_id,
     examFilename,
     description,
-  }: Request): Promise<Exam> {
-    const examsRepository = getRepository(Exam);
-    const usersRepository = getRepository(User);
-
-    const user = await usersRepository.findOne(user_id);
+  }: IRequest): Promise<Exam> {
+    const user = await this.usersRepository.findById(user_id);
 
     if (!user) {
       throw new AppError('Only authenitcated users can add exams.', 401);
     }
 
     try {
-      const exam = examsRepository.create({
+      const exam = await this.examsRepository.create({
         user_id,
         exam: examFilename,
         description,
       });
-
-      await examsRepository.save(exam);
 
       return exam;
     } catch (error) {

@@ -1,11 +1,11 @@
-import { getCustomRepository } from 'typeorm';
+import { inject, injectable } from 'tsyringe';
 
 import AppError from '@shared/errors/AppError';
 
 import Consultation from '../infra/typeorm/entities/Consultation';
-import ConsultationsRepository from '../infra/typeorm/repositories/ConsultationsRepository';
+import IConsultationsRepository from '../repositories/IConsultationsRepository';
 
-interface Request {
+interface IRequest {
   user_id: string;
   doctor: string;
   specialty: string;
@@ -13,20 +13,22 @@ interface Request {
   date: Date;
 }
 
+@injectable()
 class CreateConsultationService {
+  constructor(
+    @inject('ConsultationsRepository')
+    private consultationsRepository: IConsultationsRepository,
+  ) {}
+
   public async execute({
     user_id,
     doctor,
     specialty,
     description,
     date,
-  }: Request): Promise<Consultation> {
-    const consultationsRepository = getCustomRepository(
-      ConsultationsRepository,
-    );
-
+  }: IRequest): Promise<Consultation> {
     try {
-      const consultation = await consultationsRepository.create({
+      const consultation = await this.consultationsRepository.create({
         user_id,
         doctor,
         specialty,

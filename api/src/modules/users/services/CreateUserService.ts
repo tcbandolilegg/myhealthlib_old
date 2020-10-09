@@ -1,11 +1,12 @@
-import { getRepository } from 'typeorm';
 import { hash } from 'bcryptjs';
+import { injectable, inject } from 'tsyringe';
 
 import AppError from '@shared/errors/AppError';
 
 import User from '../infra/typeorm/entities/User';
+import IUsersRepositories from '../repositories/IUsersRepository';
 
-interface Request {
+interface IRequest {
   name: string;
   email: string;
   password: string;
@@ -17,51 +18,41 @@ interface Request {
   uf: string;
 }
 
+@injectable()
 class CreateUserService {
-  public async execute({
-    name,
-    email,
-    password,
-    cpf,
-    birth,
-    address,
-    address_two,
-    city,
-    uf,
-  }: Request): Promise<User> {
-    const usersRepository = getRepository(User);
+  constructor(
+    @inject('UsersRepository')
+    private usersRepository: IUsersRepositories,
+  ) {}
 
-    const checkEmailExists = await usersRepository.findOne({
-      where: { email },
-    });
+  public async execute(userData: IRequest): Promise<User> {
+    const checkEmailExists = await this.usersRepository.findByEmail(
+      userData.email,
+    );
 
     if (checkEmailExists) {
       throw new AppError('Email address already used.');
     }
 
-    const checkCpfExists = await usersRepository.findOne({
-      where: { cpf },
-    });
+    const checkCpfExists = await this.usersRepository.findByCpf(userData.cpf);
 
     if (checkCpfExists) {
       throw new AppError('This CPF already used.');
     }
 
-    const hashedPassword = await hash(password, 8);
+    const hashedPassword = await hash(userData.password, 8);
 
-    const user = usersRepository.create({
-      name,
-      email,
+    const user = await this.usersRepository.create({
+      name: userData.name,
+      email: userData.email,
+      cpf: userData.cpf,
+      birth: userData.birth,
+      address: userData.address,
+      address_two: userData.address_two,
+      city: userData.city,
+      uf: userData.uf,
       password: hashedPassword,
-      cpf,
-      birth,
-      address,
-      address_two,
-      city,
-      uf,
     });
-
-    await usersRepository.save(user);
 
     return user;
   }
