@@ -47,11 +47,14 @@ header nav a {
   align-self: center;
 }
 
+
+nav {
+  background-color: #03145f;
+}
+
 header nav a:hover {
   color: #ffff;
 }
-
-/* ////// filme principal */
 
 .fundoTela {
   font-size: 16px;
@@ -67,7 +70,7 @@ header nav a:hover {
 
 .fundoCorpo {
   font-size: 16px;
-  /* height: 600px; */
+
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -144,20 +147,26 @@ header nav a:hover {
   font-style: italic;
 }
 
-#menu {
+
+
+#menuDeslizante a {
+  color: solid hsla(214, 93%, 12%, 0.5);
+
+}
+
+#menuDeslizante {
   position: fixed;
   right: 0;
   top: 30%;
   width: 4em;
   margin-top: -1.5em;
   margin: -1.5em 0 0 0;
-  z-index: 5;
-  background: hsla(49, 80%, 60%, 0.7);
-  /* color: white; */
+  /* z-index: 5; */
+  background: hsla(49, 50%, 50%, 0.8);
   font-weight: bold;
   font-size: x-large;
   text-align: right;
-  border: solid hsla(214, 89%, 18%, 0.5);
+  border: solid hsla(214, 93%, 12%, 0.5);
   border-right: none;
   padding: 0.5em 1.5em 0.5em 1.5em;
   box-shadow: 0 1px 3px black;
@@ -277,8 +286,6 @@ h4 {
 
 
 .container-fluid #cultura {
-  /* 
-  modificada na verção 0.1 background: url('../images/img_mocap/div1.png')60% no-repeat; */
   background: url('../images/fundocultura.png') no-repeat;
   height: 600px;
   background-size: contain;
@@ -289,8 +296,7 @@ h4 {
   align-items: start;
 }
 
-/* subistituida pelo HTML os
-background com imagem das divs de 1 a 6*/
+
 .container-fluid #quemSomos {
   padding: 20px;
   background: url('../images/quemSomos.png') no-repeat;
@@ -354,10 +360,7 @@ p {
 
 
 .container-fluid #parcerias {
-  /* Parcerias */
 
-  /* retirada na versão 0.1
-  background: url('../images/img_mocap/div4.png')60% no-repeat; */
   height: 600px;
   background-size: contain;
   background-size: cover;
@@ -399,12 +402,12 @@ p {
 
 .icones {
   margin-left: 40px;
-  filter: brightness(50%);
+  filter: brightness(30%);
 }
 
 .icones:hover {
   padding: 0;
-  transition: 0.5s;
+  transition: 0.3s;
   filter: brightness(100%);
 }
 
@@ -413,559 +416,4 @@ p {
   text-align: center;
   align-items: center;
   background-color: #03145f;
-}
-
-
-#header form .input-group {
-  margin: 0 auto 2em auto;
-}
-
-#header .input-group {
-  box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-}
-
-.z-index-10 {
-  z-index: 10;
-}
-
-.input-group {
-  position: relative;
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-*,
-::after,
-::before {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-}
-
-.input-group .form-control:not(:last-child),
-.input-group-addon:not(:last-child),
-.input-group-btn:not(:first-child)>.btn-group:not(:last-child)>.btn,
-.input-group-btn:not(:first-child)>.btn:not(:last-child):not(.dropdown-toggle),
-.input-group-btn:not(:last-child)>.btn,
-.input-group-btn:not(:last-child)>.btn-group>.btn,
-.input-group-btn:not(:last-child)>.dropdown-toggle {
-  border-bottom-right-radius: 0;
-  border-top-right-radius: 0;
-}
-
-.search-results {
-  padding: 5px 10px;
-}
-
-.dropdown-menu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 1000;
-  display: none;
-  float: left;
-  min-width: 160px;
-  padding: 5px 0;
-  margin: 2px 0 0;
-  font-size: 1rem;
-  color: #373a3c;
-  text-align: left;
-  list-style: none;
-  background-color: #fff;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, .15);
-  border-radius: .25rem;
-}
-
-.sos-icon .corgi {
-  position: absolute;
-  width: 100px;
-  top: -30px;
-  left: 14px;
-}
-
-.sos-icon .corgi {
-  position: absolute;
-  width: 60px;
-}
-
-.sos-icon img {
-  filter: drop-shadow(0px 1px 1px #000);
-}
-
-img {
-  vertical-align: middle;
-}
-
-img {
-  border-style: none;
-}
-
-element.style {}
-
-#header form input,
-#header form .btn.btn-secondary {
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  background: #2ecc71;
-  height: 39px;
-  font-size: 16px;
-  padding: 0 10px;
-  font-weight: 600;
-  border: none;
-}
-
-#header form .btn.btn-secondary {
-  -moz-border-radius: 0 5px 5px 0;
-  -webkit-border-radius: 0 5px 5px 0;
-  border-radius: 0 5px 5px 0;
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 300;
-  background-color: #5080ce;
-  color: #ecf1fa;
-}
-
-.input-group-btn:not(:first-child)>.btn,
-.input-group-btn:not(:first-child)>.btn-group {
-  z-index: 2;
-  margin-left: -1px;
-}
-
-.input-group-btn:not(:last-child)>.btn,
-.input-group-btn:not(:last-child)>.btn-group {
-  margin-right: -1px;
-}
-
-.input-group .form-control:not(:first-child),
-.input-group-addon:not(:first-child),
-.input-group-btn:not(:first-child)>.btn,
-.input-group-btn:not(:first-child)>.btn-group>.btn,
-.input-group-btn:not(:first-child)>.dropdown-toggle,
-.input-group-btn:not(:last-child)>.btn-group:not(:first-child)>.btn,
-.input-group-btn:not(:last-child)>.btn:not(:first-child) {
-  border-bottom-left-radius: 0;
-  border-top-left-radius: 0;
-}
-
-.input-group .form-control:not(:last-child),
-.input-group-addon:not(:last-child),
-.input-group-btn:not(:first-child)>.btn-group:not(:last-child)>.btn,
-.input-group-btn:not(:first-child)>.btn:not(:last-child):not(.dropdown-toggle),
-.input-group-btn:not(:last-child)>.btn,
-.input-group-btn:not(:last-child)>.btn-group>.btn,
-.input-group-btn:not(:last-child)>.dropdown-toggle {
-  border-bottom-right-radius: 0;
-  border-top-right-radius: 0;
-}
-
-.form-control-lg,
-.input-group-lg>.form-control,
-.input-group-lg>.input-group-addon,
-.input-group-lg>.input-group-btn>.btn {
-  padding: .75rem 1.5rem;
-  font-size: 1.25rem;
-  border-radius: .3rem;
-}
-
-.input-group-btn>.btn {
-  position: relative;
-}
-
-.btn-secondary {
-  color: #373a3c;
-  background-color: #fff;
-  border-color: #ccc;
-}
-
-.btn {
-  display: inline-block;
-  font-weight: 400;
-  line-height: 1.25;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  border: 1px solid transparent;
-  padding: .5rem 1rem;
-  font-size: 1rem;
-  border-radius: .25rem;
-}
-
-[type=reset],
-[type=submit],
-button,
-html [type=button] {
-  -webkit-appearance: button;
-}
-
-[type=button],
-[type=reset],
-[type=submit],
-button {
-  cursor: pointer;
-}
-
-button,
-input,
-select,
-textarea {
-  margin: 0;
-  line-height: inherit;
-  border-radius: 0;
-}
-
-[role=button],
-a,
-area,
-button,
-input,
-label,
-select,
-summary,
-textarea {
-  -ms-touch-action: manipulation;
-  touch-action: manipulation;
-}
-
-button,
-select {
-  text-transform: none;
-}
-
-button,
-input,
-select,
-textarea {
-  margin: 0;
-}
-
-button,
-input,
-select {
-  overflow: visible;
-}
-
-button,
-input,
-select,
-textarea {
-  font: inherit;
-}
-
-*,
-::after,
-::before {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-}
-
-user agent stylesheet button {
-  appearance: button;
-  -webkit-writing-mode: horizontal-tb !important;
-  text-rendering: auto;
-  color: -internal-light-dark(black, white);
-  letter-spacing: normal;
-  word-spacing: normal;
-  text-transform: none;
-  text-indent: 0px;
-  text-shadow: none;
-  display: inline-block;
-  text-align: center;
-  align-items: flex-start;
-  cursor: default;
-  background-color: -internal-light-dark(rgb(239, 239, 239), rgb(59, 59, 59));
-  box-sizing: border-box;
-  margin: 0em;
-  font: 400 13.3333px Arial;
-  padding: 1px 6px;
-  border-width: 2px;
-  border-style: outset;
-  border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-  border-image: initial;
-}
-
-.input-group-btn {
-  position: relative;
-  font-size: 0;
-  white-space: nowrap;
-}
-
-.input-group-addon,
-.input-group-btn {
-  white-space: nowrap;
-  vertical-align: middle;
-}
-
-body,
-html {
-  background-color: #ecf0f1;
-  text-rendering: optimizeLegibility;
-  text-rendering: geometricPrecision;
-  font-smooth: always;
-  font-smoothing: antialiased;
-  -moz-font-smoothing: antialiased;
-  -webkit-font-smoothing: antialiased;
-  -webkit-font-smoothing: subpixel-antialiased;
-}
-
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #373a3c;
-  background-color: #fff;
-}
-
-html {
-  font-size: 16px;
-  -ms-overflow-style: scrollbar;
-  -webkit-tap-highlight-color: transparent;
-}
-
-html {
-  font-family: sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-
-*,
-::after,
-::before {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-}
-
-#header form input,
-#header form .btn .btn-secondary {
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  background: #2ecc71;
-  height: 39px;
-  font-size: 16px;
-  padding: 0 10px;
-  font-weight: 600;
-  border: none;
-}
-
-#header form .btn.btn-secondary {
-  -moz-border-radius: 0 5px 5px 0;
-  -webkit-border-radius: 0 5px 5px 0;
-  border-radius: 0 5px 5px 0;
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 300;
-  background-color: #5080ce;
-  color: #ecf1fa;
-}
-
-.input-group-btn:not(:first-child)>.btn,
-.input-group-btn:not(:first-child)>.btn-group {
-  z-index: 2;
-  margin-left: -1px;
-}
-
-.input-group-btn:not(:last-child)>.btn,
-.input-group-btn:not(:last-child)>.btn-group {
-  margin-right: -1px;
-}
-
-.input-group .form-control:not(:first-child),
-.input-group-addon:not(:first-child),
-.input-group-btn:not(:first-child)>.btn,
-.input-group-btn:not(:first-child)>.btn-group>.btn,
-.input-group-btn:not(:first-child)>.dropdown-toggle,
-.input-group-btn:not(:last-child)>.btn-group:not(:first-child)>.btn,
-.input-group-btn:not(:last-child)>.btn:not(:first-child) {
-  border-bottom-left-radius: 0;
-  border-top-left-radius: 0;
-}
-
-.input-group .form-control:not(:last-child),
-.input-group-addon:not(:last-child),
-.input-group-btn:not(:first-child)>.btn-group:not(:last-child)>.btn,
-.input-group-btn:not(:first-child)>.btn:not(:last-child):not(.dropdown-toggle),
-.input-group-btn:not(:last-child)>.btn,
-.input-group-btn:not(:last-child)>.btn-group>.btn,
-.input-group-btn:not(:last-child)>.dropdown-toggle {
-  border-bottom-right-radius: 0;
-  border-top-right-radius: 0;
-}
-
-.form-control-lg,
-.input-group-lg>.form-control,
-.input-group-lg>.input-group-addon,
-.input-group-lg>.input-group-btn>.btn {
-  padding: .75rem 1.5rem;
-  font-size: 1.25rem;
-  border-radius: .3rem;
-}
-
-.input-group-btn>.btn {
-  position: relative;
-}
-
-.btn-secondary {
-  color: #373a3c;
-  background-color: #fff;
-  border-color: #ccc;
-}
-
-.btn {
-  display: inline-block;
-  font-weight: 400;
-  line-height: 1.25;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  border: 1px solid transparent;
-  padding: .5rem 1rem;
-  font-size: 1rem;
-  border-radius: .25rem;
-}
-
-[type=reset],
-[type=submit],
-button,
-html [type=button] {
-  -webkit-appearance: button;
-}
-
-[type=button],
-[type=reset],
-[type=submit],
-button {
-  cursor: pointer;
-}
-
-button,
-input,
-select,
-textarea {
-  margin: 0;
-  line-height: inherit;
-  border-radius: 0;
-}
-
-[role=button],
-a,
-area,
-button,
-input,
-label,
-select,
-summary,
-textarea {
-  -ms-touch-action: manipulation;
-  touch-action: manipulation;
-}
-
-button,
-select {
-  text-transform: none;
-}
-
-button,
-input,
-select,
-textarea {
-  margin: 0;
-}
-
-button,
-input,
-select {
-  overflow: visible;
-}
-
-button,
-input,
-select,
-textarea {
-  font: inherit;
-}
-
-*,
-::after,
-::before {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-}
-
-user agent stylesheet button {
-  appearance: button;
-  -webkit-writing-mode: horizontal-tb !important;
-  text-rendering: auto;
-  color: -internal-light-dark(black, white);
-  letter-spacing: normal;
-  word-spacing: normal;
-  text-transform: none;
-  text-indent: 0px;
-  text-shadow: none;
-  display: inline-block;
-  text-align: center;
-  align-items: flex-start;
-  cursor: default;
-  background-color: -internal-light-dark(rgb(239, 239, 239), rgb(59, 59, 59));
-  box-sizing: border-box;
-  margin: 0em;
-  font: 400 13.3333px Arial;
-  padding: 1px 6px;
-  border-width: 2px;
-  border-style: outset;
-  border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-  border-image: initial;
-}
-
-.input-group-btn {
-  position: relative;
-  font-size: 0;
-  white-space: nowrap;
-}
-
-.input-group-addon,
-.input-group-btn {
-  white-space: nowrap;
-  vertical-align: middle;
-}
-
-body,
-html {
-  background-color: #ecf0f1;
-  text-rendering: optimizeLegibility;
-  text-rendering: geometricPrecision;
-  font-smooth: always;
-  font-smoothing: antialiased;
-  -moz-font-smoothing: antialiased;
-  -webkit-font-smoothing: antialiased;
-  -webkit-font-smoothing: subpixel-antialiased;
-}
-
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #373a3c;
-  background-color: #fff;
-}
-
-html {
-  font-size: 16px;
-  -ms-overflow-style: scrollbar;
-  -webkit-tap-highlight-color: transparent;
-}
-
-html {
-  font-family: sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
 }
