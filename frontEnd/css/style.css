@@ -56,6 +56,20 @@ header nav a:hover {
   color: #ffff;
 }
 
+/* 
+.classeTopo {
+  margin-top: 100px;
+}
+
+#menuVertical {
+  position: fixed;
+  z-index: 999;
+  left: 5px;
+  top: 5px;
+  overflow: hidden;
+  padding: 6px;
+} */
+
 .fundoTela {
   font-size: 16px;
   height: 600px;
