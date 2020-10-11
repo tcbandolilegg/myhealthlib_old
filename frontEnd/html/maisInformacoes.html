@@ -1089,12 +1089,13 @@
 
     #buoy {
       position: absolute;
-      top: 220px;
-      left: 10%;
+      top: 100px;
+      left: 15%;
       transition: all 0.3s ease;
     }
 
     #buoy img {
+      /* height: 240px; */
       transition: all 0.3s ease;
     }
 
@@ -1390,11 +1391,11 @@
       <div class="row">
         <div class="search-header">
           <h1 class="header-presentation">Oi! Como podemos ajudar?</h1>
-          <form action="http://faq.inevent.com/l/pt/search" method="GET">
+          <form action="./faqAvancada.html" method="GET">
             <div class="input-group input-group-lg z-index-10"><input type="text" placeholder="Preciso de ajuda com..."
                 value="" autocomplete="off" class="query form-control">
-              <ul class="search-results dropdown-menu"></ul><span class="input-group-btn"><button type="submit"
-                  class="btn btn-secondary">Buscar</button></span>
+              <ul class="search-results dropdown-menu"></ul><span class="input-group-btn">
+                <button type="submit" class="btn btn-secondary">Buscar</button></span>
               <div class="sos-icon"><img src="../images/logos/ash.svg" class="corgi"></div>
             </div>
           </form>
@@ -1456,170 +1457,303 @@
 
 
     .perguntasFaq {
-      margin-top: 120px;
-      margin-left: 200px;
+      margin-top: 40px;
+      margin-left: 20%;
+    }
+
+    .respostasFaq h5 {
+      color: rgb(48, 87, 4);
+    }
+
+    .respostasFaq {
+      margin-top: 40px;
+      margin-left: 20%;
     }
   </style>
-  <div>
-    <a href="../html/docsFaq.html" target="_blank" title="Em construção">
+  <div id="home" class="container-fluid col-md-8">
+    <div id="categories" class="row flex-row">
+      <div class="col-xs-12 col-sm-6 col-md-4"><a href="pt/start.html" class="card-link">
+          <div id="category" class="card hvr-card">
+            <div class="card-block">
+              <div class="text-xs-center"><img src="https://files.helpdocs.io/7zot8dJQFe/other/1588169627710/start.svg"
+                  class="category-icon">
+                <h3 class="card-title">Health Tutorial</h3>
+                <p class="card-text">Vídeo com demonstrações das funcionalidades da plataforma</p>
+
+              </div>
+            </div>
+          </div>
+        </a></div>
+      <div class="col-xs-12 col-sm-6 col-md-4"><a href="pt/registration.html" class="card-link">
+          <div id="category" class="card hvr-card">
+            <div class="card-block">
+              <div class="text-xs-center"><img
+                  src="https://files.helpdocs.io/7zot8dJQFe/other/1588169640705/registration.svg" class="category-icon">
+                <h3 class="card-title">Health Depoimentos</h3>
+                <p class="card-text">Usuários colocam suas opniões, em videos e textos</p>
+
+              </div>
+            </div>
+          </div>
+        </a></div>
+      <div class="col-xs-12 col-sm-6 col-md-4"><a href="pt/inevent-compliance.html" class="card-link">
+          <div id="category" class="card hvr-card">
+            <div class="card-block">
+              <div class="text-xs-center"><img
+                  src="https://files.helpdocs.io/7zot8dJQFe/other/1588169650974/compliance.svg" class="category-icon">
+                <h3 class="card-title">Health planos</h3>
+                <p class="card-text">Comparativo dos planos de assinatura</p>
+
+              </div>
+            </div>
+          </div>
+        </a></div>
+      <div class="col-xs-12 col-sm-6 col-md-4"><a href="pt/in-live-event.html" class="card-link">
+          <div id="category" class="card hvr-card">
+            <div class="card-block">
+              <div class="text-xs-center"><img src="https://files.helpdocs.io/7zot8dJQFe/other/1588169669667/app.svg"
+                  class="category-icon">
+                <h3 class="card-title">Helth Live</h3>
+                <p class="card-text">Convidados, Participantes, Colaboradores</p>
+
+              </div>
+            </div>
+          </div>
+        </a></div>
+
+
+      <div class="col-xs-12 col-sm-6 col-md-4"><a href="pt/general.html" class="card-link">
+          <div id="category" class="card hvr-card">
+            <div class="card-block">
+              <div class="text-xs-center"><img
+                  src="https://files.helpdocs.io/7zot8dJQFe/other/1588169730283/general.svg" class="category-icon">
+                <h3 class="card-title">Health Dicas</h3>
+                <p class="card-text">Dicas de saúde e macetes para facilitar o seu dia.</p>
+
+              </div>
+            </div>
+          </div>
+        </a></div>
+      <div class="col-xs-12 col-sm-6 col-md-4"><a href="pt/parceiros.html" class="card-link">
+          <div id="category" class="card hvr-card">
+            <div class="card-block">
+              <div class="text-xs-center"><img
+                  src="https://files.helpdocs.io/7zot8dJQFe/other/1588171839882/handshake-logo-2.svg"
+                  class="category-icon">
+                <h3 class="card-title">Health Parcerias</h3>
+                <p class="card-text">Instutuições e Médicos parceiros</p>
+
+              </div>
+            </div>
+          </div>
+        </a></div>
+    </div>
+    <div id="category" class="btn-cta">
+      <h2 class="cta-title">Top 10 das dúvidas</h2>
+
+    </div>
+  </div>
+
+  <!-- <div>
+    <div class="faqBox">
+      <div>
+
+      </div>
+      <div>
+
+      </div>
+    </div>
+
+    <a href="../html/docsFaq.html" target="_blank" title="Pesquisas avançadas em construção">
       <center>
         <p> </p>
         <p> </p>
+        <p>Pesquisas avançadas em construção </p>
         <p> </p>
-        <img src="../images/logos/emconstrucao.jpg" height="125" width="250" alt="em Construção">
         <p> </p>
-        <p> </p>
+
       </center>
     </a>
-  </div>
+  </div> -->
   <div class="container-fluid">
     <div class="perguntasFaq">
-      <P><a href="">
+      <P><a href="#1">
           Quem pode ter acesso a plataforma?
         </a>
       </P>
       <p>
-        <a href="">
+        <a href="#2">
           Como tenho acesso a plataforma?
         </a>
       </p>
       <p>
-        <a href="">
+        <a href="#3">
           Quais serviços a plataforma oferece?
         </a>
       </p>
       <p>
-        <a href="">
+        <a href="#4">
           O que está incluso no valor que eu paguei na plataforma?
         </a>
       </p>
       <p>
-        <a href="">
-          Como faço para agendar meu atendimento?
+        <a href="#5">
+          Como faço para indicar parcerias?
         </a>
       </p>
-      <p><a href="">
+      <p><a href="#6">
           Quem te acesso aos meus registros?
         </a>
       </p>
       <p>
-        <a href="">
+        <a href="#7">
           O que acontece se não quiser mais o serviço?
         </a>
       </p>
       <p>
-        <a href="">
+        <a href="#8">
           Terei apoio para dúvidas técnicas?
         </a>
       </p>
-      <p><a href="">
+      <p><a href="#9">
           Quais são os custos ?
         </a>
       </p>
       <p>
-        <a href="">
+        <a href="#10">
           Quais os meios de pagamento?
         </a>
       </p>
       <p>
-        <a href="">
+        <a href="#11">
           Sendo usuário da plataforma tenho algum desconto ou cashback em serviços de parceiros?
         </a>
       </p>
-
+      <p>
+        <a href="#12">
+          Quem é o usuário do serviço?
+        </a>
+      </p>
+      <p>
+        <a href="#13">
+          Esse serviço é para mim?
+        </a>
+      </p>
     </div>
-    <p>
+  </div>
 
-      01) Quem somos?
-      Somos uma plataforma que conecta espaços de beleza ociosos a profissionais que já tem sua carteira de clientes.
+  <div id="category" class="btn-cta">
+    <h2 class="cta-title">Nossas respostas</h2>
 
-      02) Como faço para ser profissional parceiro do Camadas?
-      Preencha o formulário, a equipe de suporte fará uma curadoria e em até 05 dias úteis, receberá no email cadastrado
-      uma notificação estando apto para atender em nossas unidades parceiras cadastradas.
+  </div>
+  <div class="respostasFaq">
+    <p id=1>
+    <h5>
+      Quem pode ter acesso a plataforma?
+    </h5>
+    Todas as pessoas com acesso a internet, em dispositivo próprio ou não
+    </p>
+    <p id=2>
+    <h5>
+      Como tenho acesso a plataforma?
+    </h5>
+    Através da internet para que fez seu cadastramento.
+    </p>
+    <p id=3>
+    <h5>
+      Quais serviços a plataforma oferece?
+    </h5>
+    Arquivamento de registros médicos de várias procedências, exames, receitas, imagens, vídeos. Organizando-os de
+    forma categorizada, permitindo o usuário fácil aceso e localização das informações de forma fácil, rápida e
+    segura.
+    </p>
+    <p id=4>
+    <h5>
+      O que está incluso no valor que eu pago para plataforma?
+    </h5>
+    Serviços não só do arquivamento, mas também a organização e categorização dos dados, para pesquisas, enviou ou
+    ainda impressões (excetos vídeos)
+    </p>
+    <p id=5>
+    <h5>
+      Como faço para indicar parcerias?
+    </h5>
+    Para indicações o usuário deve utilizar o formulário da plataforma, que terá até 30 dias para avaliar fechar ou
+    não com o parceiro e posicionar o usuário que indicou, com a resposta
+    </p>
+    <p id=6>
+    <h5>
+      Quem tem acesso aos meus registros?
+    </h5>
+    Todo aquele que possuir o usuário e senha cadastrados, e instituições ou médicos que o usuário quiser
+    disponibilizar.
+    </p>
+    <p id=7>
+    <h5>
+      O que acontece se não quiser mais o serviço?
+    </h5>
+    No contrato digital, temos uma cláusula de proteção do usuário, onde quando ele se desliga da plataforma, deve
+    cadastrar um e-mail, para que seja disponibilizado para ele (durante 30 dias) todos os seus dados armazenados para
+    que ele faça download.
+    </p>
+    <p id=8>
+    <h5>
+      Terei apoio para dúvidas técnicas?
+    </h5>
+    Sim, caso as dúvidas não sejam solucionadas pelo tutorial, ou pela FAQ, nossa equipe de desenvolvimento estará
+    sempre pronta a responder as perguntas e necessidades.
 
-      03) Como funciona?
-      O profissional parceiro Camadas deverá preencher um formulário e estando apto pagará por horas que serão
-      convertidas em créditos (horas=créditos) na plataforma Camadas que poderá ser usado em qualquer uma de nossas
-      unidades parceiras que terá validade de até 3 meses.
+    </p>
+    <p id=9>
+    <h5>
+      Quanto vai me custar este serviço?
+    </h5>
+    Temos vários planos que se adequam as necessidades de cada usuários. Acesse:
+    Nossos planos.
 
-      04) E como faço para ter acesso a plataforma?
-      No e-mail enviado, conterá seu login e senha que posteriormente poderá ser alterado.
+    </p>
+    <p id=10>
+    <h5>
+      Como poço realizar o pagamento?
+    </h5>
+    Você pode escolher entre alguns meios, boleto, debito em conta, transferência, cartão ou PIX. O cliente tem acesso
+    imediato a plataforma, que aguardará até 2 (confirmar isto) dias uteis para confirmação do pagamento. No caso de
+    não confirmação o cliente receberá, e-mails e também alertas em sua conta toda vez que acessar durante 5 dias
+    (após o período a conta ficará bloqueada)
 
-      05) Como faço para agendar meu atendimento?
-      Solicitar através da plataforma local, dia, mês, horário que deseja atender em nossos espaços parceiros. Aguardar
-      confirmação e pronto, só comparecer no local, dia e horário agendados.
+    </p>
+    <p id=11>
+    <h5>
+      Sendo usuário da plataforma tenho algum desconto ou cashback em serviços de parceiros?
+    </h5>
+    Necessário pensar.....
+    </p>
+    <p id=12>
+    <h5>
+      Para quem se destina o serviço?
+    </h5>
+    Qualquer pessoa que deseje ter um acesso de maneira simples, rápida, sem riscos de perdas dos seus registros
+    médicos, ou de seus familiares, filhos, pais, etc.
+    </p>
+    <p id=13>
+    <h5>
+      Quem é o usuário do serviço?
+    </h5>
 
-      06) Tenho que levar meu material?
-      Cada serviço possui suas especificações de material, mas, de modo geral, o profissional parceiro leva os materiais
-      de uso profissional dos serviços que lhe competem entre outros devidamente higienizados e esterilizados conforme
-      normas descritas pela Vigilância Sanitária.
-
-      07) O que está incluso no valor que eu paguei na plataforma?
-      As horas que são transformadas em créditos.
-
-
-
-
-      08) E se eu precisar de mais horas e material. Posso utilizar?
-      Sim, os créditos se você tiver mediante a liberação prévia da plataforma e do espaço parceiro se tiver horário
-      disponível. Quanto ao material de trabalho, deverá leva-lo. Caso, esqueça de algum item poderá solicitar ao espaço
-      parceiro que cobrará a utilização que deverá ser pago imediatamente.
-
-      09) Quem pode se associar ao Camadas?
-      Destina-se aos profissionais MEI que atuam no mercado da beleza e que desejam ter autonomia e flexibilidade.
-
-      10) Se eu tiver próximo a um espaço parceiro, poderei atender minha cliente?
-      Se você solicitou e recebeu confirmação, sim. Eventuais casos, não serão aceitos.
-
-      11) Como devo me vestir espaço parceiro?
-      Você terá que cumprir as normas de conduta e regras da Vigilância Sanitária, destinadas a espaços de beleza.
-
-      12) Terei apoio para dúvidas técnicas?
-      No e-mail enviado a você, contendo seu login e senha, estão disponíveis os contatos do suporte que podem ser
-      utilizados em caso de eventual necessidade. Nessa situação, escolha um dos contatos para uma imediata solução.
-
-      13) E se eu fizer algum procedimento e o cliente não gostar?
-      A responsabilidade do serviço realizado cabe ao profissional junto a seu cliente, ficando isento o espaço parceiro
-      e a plataforma Camadas de qualquer eventualidade ou insatisfação de seu cliente.
-
-      14) Que horas tenho que chegar para o atendimento?
-      Se apresentar 30 minutos antes do horário solicitado afim de se organizar para atendimento de seu cliente. Onde
-      receberá o local limpo e organizado.
-
-      15) Que horas devo sair do estabelecimento?
-      Deverá se retirar do estabelecimento parceiro até 30 minutos após o término do atendimento ao seu cliente.
-      Deixando o local limpo e organizado.
-
-
-
-
-      16) Como faço se o cliente desmarcar comigo?
-      Deverá entrar em contato imediatamente por meio da plataforma e desmarcando a agenda. Caso contrário será
-      descontado de seu crédito o tempo que fechou a agenda do estabelecimento.
-
-      17) Como o cliente paga pelo serviço realizado?
-      Seu cliente pagará diretamente a você profissional por meio de cartão de crédito ou dinheiro.
-
-      18) O cliente pagará algum valor ao estabelecimento?
-      Não, a não ser que ele decida fazer algum serviço extra que não seja com parceiro Camadas.
-
-      19) E como ele paga?
-      Ao serviço feito no estabelecimento, deverá pagar direto a eles.
-
-      20) Eu sendo um parceiro Camadas terei que pagar algum valor ao estabelecimento?
-      A não ser que você utilize algum material do próprio estabelecimento. Que será cobrado de forma imediata.
-
-      21) Como comprovo o tempo que fiquei no espaço parceiro?
-      Quando entrar no espaço parceiro deverá fazer o check-in e na saída o check-out. Descontando o período de
-      entrada/saída do espaço parceiro.
-
-      22) Posso atender cliente do espaço parceiro, como se de lá profissional parceiro fosse?
-      Caso venha atender cliente oriundo do espaço parceiro, esse poderá pagar a comissão determinada por eles.
+    </p>
+    <p id=14>
+    <h5>
+      Esse serviço é para mim?
+    </h5>
 
     </p>
 
+  </div>
 
 
+  <p>
+
+  </p>
   </div>
   <div class="footer-bar">
     <div class="footer-content"><a href="../php/termos.html" target="_blank" class="footer-content-item">
